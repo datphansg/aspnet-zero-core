@@ -53,10 +53,6 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
                         data: { permission: 'Pages.Tenants' }
                     },
                     {
-                        path: 'customers',
-                        loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule),
-                    },
-                    {
                         path: 'organization-units',
                         loadChildren: () => import('./organization-units/organization-units.module').then(m => m.OrganizationUnitsModule),
                         data: { permission: 'Pages.Administration.OrganizationUnits' }
